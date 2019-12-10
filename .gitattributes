@@ -1,0 +1,40 @@
+*	text=auto
+*.gif	-text	diff=lfs	filter=lfs	merge=lfs
+*.ico	-text	diff=lfs	filter=lfs	merge=lfs
+*.iso	-text	diff=lfs	filter=lfs	merge=lfs
+*.jpg	-text	diff=lfs	filter=lfs	merge=lfs
+*.lnk	-text	diff=lfs	filter=lfs	merge=lfs
+*.ods	-text	diff=lfs	filter=lfs	merge=lfs
+*.pfx	-text	diff=lfs	filter=lfs	merge=lfs
+*.png	-text	diff=lfs	filter=lfs	merge=lfs
+*.sdvproj	-text	diff=lfs	filter=lfs	merge=lfs
+*.asax	text	working-tree-encoding=UTF-8
+*.aspx	text	working-tree-encoding=UTF-8
+*.bat	text	working-tree-encoding=UTF-8
+*.config	text	working-tree-encoding=UTF-8
+*.cs	text	working-tree-encoding=UTF-8
+*.csproj	text	working-tree-encoding=UTF-8
+*.css	text	working-tree-encoding=UTF-8
+*.dgml	text	working-tree-encoding=UTF-8
+*.html	text	working-tree-encoding=UTF-8
+*.js	text	working-tree-encoding=UTF-8
+*.Master	text	working-tree-encoding=UTF-8
+*.md	text	working-tree-encoding=UTF-8
+*.ps1	text	working-tree-encoding=UTF-8
+*.pubxml	text	working-tree-encoding=UTF-8
+*.reg	text	working-tree-encoding=UTF-8
+*.resx	text	working-tree-encoding=UTF-8
+*.settings	text	working-tree-encoding=UTF-8
+*.sitemap	text	working-tree-encoding=UTF-8
+*.sln	text	working-tree-encoding=UTF-8
+*.sql	text	working-tree-encoding=UTF-8
+*.tt	text	working-tree-encoding=UTF-8
+*.xml	text	working-tree-encoding=UTF-8
+Dockerfile	text	working-tree-encoding=UTF-8
+*.bashrc	text	working-tree-encoding=UTF-8	eol=lf
+*.desktop	text	working-tree-encoding=UTF-8	eol=lf
+*.local	text	working-tree-encoding=UTF-8	eol=lf
+*.sh	text	working-tree-encoding=UTF-8	eol=lf
+*.ssh-rsa	text	working-tree-encoding=UTF-8	eol=lf
+*.xpm	text	working-tree-encoding=UTF-8	eol=lf
+.*	text	working-tree-encoding=UTF-8	eol=lf
