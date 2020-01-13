@@ -1,4 +1,11 @@
-*	text=auto
+# unless otherwise specified, auto-detect text files by examining file contents, check in text
+# files with LF line endings, and check them out with line endings appropriate for the
+# current operating system
+
+*.*	text=auto
+
+# binary files; disregard CR and LF, they're not line endings; use Large File Storage
+
 *.gif	-text	diff=lfs	filter=lfs	merge=lfs
 *.ico	-text	diff=lfs	filter=lfs	merge=lfs
 *.iso	-text	diff=lfs	filter=lfs	merge=lfs
@@ -8,6 +15,18 @@
 *.pfx	-text	diff=lfs	filter=lfs	merge=lfs
 *.png	-text	diff=lfs	filter=lfs	merge=lfs
 *.sdvproj	-text	diff=lfs	filter=lfs	merge=lfs
+
+# check in text files as bare UTF-8 BEFORE configuring their working tree encoding here
+
+# check in as UTF-8 with LF line endings; check out as UTF-16LE-BOM with line endings
+# appropriate for the current operating system
+
+#*.reg	text	working-tree-encoding=UTF-16LE-BOM
+#*.xml	text	working-tree-encoding=UTF-16LE-BOM
+
+# check in as UTF-8 with LF line endings; check out as UTF-8 (without BOM) with line endings
+# appropriate for the current operating system
+
 *.asax	text	working-tree-encoding=UTF-8
 *.aspx	text	working-tree-encoding=UTF-8
 *.bat	text	working-tree-encoding=UTF-8
@@ -22,15 +41,17 @@
 *.md	text	working-tree-encoding=UTF-8
 *.ps1	text	working-tree-encoding=UTF-8
 *.pubxml	text	working-tree-encoding=UTF-8
-*.reg	text	working-tree-encoding=UTF-8
 *.resx	text	working-tree-encoding=UTF-8
 *.settings	text	working-tree-encoding=UTF-8
 *.sitemap	text	working-tree-encoding=UTF-8
 *.sln	text	working-tree-encoding=UTF-8
 *.sql	text	working-tree-encoding=UTF-8
 *.tt	text	working-tree-encoding=UTF-8
-*.xml	text	working-tree-encoding=UTF-8
-Dockerfile	text	working-tree-encoding=UTF-8
+
+# check in as UTF-8 with LF line endings; check out as UTF-8 (without BOM) with line endings
+# appropriate for linux
+
+#Dockerfile	text	working-tree-encoding=UTF-8
 *.bashrc	text	working-tree-encoding=UTF-8	eol=lf
 *.desktop	text	working-tree-encoding=UTF-8	eol=lf
 *.local	text	working-tree-encoding=UTF-8	eol=lf
