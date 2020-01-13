@@ -21,12 +21,13 @@
 # check in as UTF-8 with LF line endings; check out as UTF-16LE-BOM with line endings
 # appropriate for the current operating system
 
-#*.reg	text	working-tree-encoding=UTF-16LE-BOM
-#*.xml	text	working-tree-encoding=UTF-16LE-BOM
+*.reg	text	working-tree-encoding=UTF-16LE-BOM
+*.xml	text	working-tree-encoding=UTF-16LE-BOM
 
 # check in as UTF-8 with LF line endings; check out as UTF-8 (without BOM) with line endings
 # appropriate for the current operating system
 
+*.Master	text	working-tree-encoding=UTF-8
 *.asax	text	working-tree-encoding=UTF-8
 *.aspx	text	working-tree-encoding=UTF-8
 *.bat	text	working-tree-encoding=UTF-8
@@ -37,7 +38,6 @@
 *.dgml	text	working-tree-encoding=UTF-8
 *.html	text	working-tree-encoding=UTF-8
 *.js	text	working-tree-encoding=UTF-8
-*.Master	text	working-tree-encoding=UTF-8
 *.md	text	working-tree-encoding=UTF-8
 *.ps1	text	working-tree-encoding=UTF-8
 *.pubxml	text	working-tree-encoding=UTF-8
@@ -51,7 +51,6 @@
 # check in as UTF-8 with LF line endings; check out as UTF-8 (without BOM) with line endings
 # appropriate for linux
 
-#Dockerfile	text	working-tree-encoding=UTF-8
 *.bashrc	text	working-tree-encoding=UTF-8	eol=lf
 *.desktop	text	working-tree-encoding=UTF-8	eol=lf
 *.local	text	working-tree-encoding=UTF-8	eol=lf
@@ -59,3 +58,4 @@
 *.ssh-rsa	text	working-tree-encoding=UTF-8	eol=lf
 *.xpm	text	working-tree-encoding=UTF-8	eol=lf
 .*	text	working-tree-encoding=UTF-8	eol=lf
+Dockerfile	text	working-tree-encoding=UTF-8	eol=lf
