@@ -3,7 +3,7 @@
 # with line endings appropriate for the current operating system
 
 *	text=auto	eol=lf
-*.*	text=auto
+*.*	text=auto	eol=crlf
 .*	text=auto	eol=lf
 
 # binary files; disregard CR and LF, they're not line endings; use Large
